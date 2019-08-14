@@ -8,15 +8,21 @@
         <div class=" card-header">
           <button class=" btn btn-fill btn-twitter" [routerLink]="['/registrosolucao']"> Adicionar </button>
         </div>
-        <div class=" col-md-5">
-            <input
-              class=" form-control"
-              [(ngModel)]="lista-solucaoparada.pesquisa"
-              placeholder="Buscar por..."
-              name="pesquisa"
-              type="text"
-              value=""
-            />
+        <div class="row">
+          <div class="col-md-5">
+            <input class="form-control" placeholder="Busque por..." name="pesquisar" type="text" />
+          </div>
+        
+          <!-- Button trigger modal -->
+          <button type="button" rel="tooltip" class="btn btn-info btn-link btn-icon btn-sm" data-toggle="modal"
+            data-target="#exampleModal">
+            <i class="tim-icons icon-book-bookmark"></i>
+          </button>
+        
+          <button type="button" rel="tooltip" class="btn btn-info btn-link btn-icon btn-sm">
+            <i class=" tim-icons icon-chart-bar-32"> </i>
+          </button>
+        
         </div>
         <div class=" card-body">
           <div class=" table-responsive">
@@ -28,6 +34,7 @@
                   <th>RESPONSÁVEL</th>
                   <th>LINHA</th>
                   <th class="text-center">ÁREA DE APOIO</th>
+                  <th class="text-right">Ações</th>
                 </tr>
               </thead>
               <tbody>
@@ -37,6 +44,20 @@
                   <td>Mario Yamasaki</td>
                   <td>DG25</td>
                   <td class="text-center">Engenharia de Processos</td>
+                  <td class="td-actions text-right">
+                      <button type="button" rel="tooltip" class="btn btn-info btn-link btn-icon btn-sm">
+                          <i class="tim-icons icon-book-bookmark"></i>
+                      </button>
+                    <button type="button" rel="tooltip" class="btn btn-info btn-link btn-icon btn-sm">
+                        <i class="tim-icons icon-single-02"></i>
+                    </button>
+                    <button type="button" rel="tooltip" class="btn btn-success btn-link btn-icon btn-sm">
+                        <i class="tim-icons icon-settings"></i>
+                    </button>
+                    <button type="button" rel="tooltip" class="btn btn-danger btn-link btn-icon btn-sm">
+                        <i class="tim-icons icon-simple-remove"></i>
+                    </button>
+                </td>
                 </tr>
                 <tr>
                   <td>08/08/2019</td>
@@ -44,6 +65,20 @@
                   <td>Paulo Guedes</td>
                   <td>DG25</td>
                   <td class="text-center">Engenharia Mecânica</td>
+                  <td class="td-actions text-right">
+                      <button type="button" rel="tooltip" class="btn btn-info btn-link btn-icon btn-sm">
+                          <i class="tim-icons icon-book-bookmark"></i>
+                      </button>
+                    <button type="button" rel="tooltip" class="btn btn-info btn-link btn-icon btn-sm">
+                        <i class="tim-icons icon-single-02"></i>
+                    </button>
+                    <button type="button" rel="tooltip" class="btn btn-success btn-link btn-icon btn-sm">
+                        <i class="tim-icons icon-settings"></i>
+                    </button>
+                    <button type="button" rel="tooltip" class="btn btn-danger btn-link btn-icon btn-sm">
+                        <i class="tim-icons icon-simple-remove"></i>
+                    </button>
+                </td>
                 </tr>
                 <tr>
                   <td>09/08/2019</td>
@@ -51,6 +86,20 @@
                   <td>Jair Bolsonaro</td>
                   <td>DG25</td>
                   <td class="text-center">Engenharia Eletrônica</td>
+                  <td class="td-actions text-right">
+                      <button type="button" rel="tooltip" class="btn btn-info btn-link btn-icon btn-sm">
+                          <i class="tim-icons icon-book-bookmark"></i>
+                      </button>
+                    <button type="button" rel="tooltip" class="btn btn-info btn-link btn-icon btn-sm">
+                        <i class="tim-icons icon-single-02"></i>
+                    </button>
+                    <button type="button" rel="tooltip" class="btn btn-success btn-link btn-icon btn-sm">
+                        <i class="tim-icons icon-settings"></i>
+                    </button>
+                    <button type="button" rel="tooltip" class="btn btn-danger btn-link btn-icon btn-sm">
+                        <i class="tim-icons icon-simple-remove"></i>
+                    </button>
+                </td>
                 </tr>
                 <tr>
                   <td>RSR902</td>
@@ -58,6 +107,20 @@
                   <td>Jair Bolsonaro</td>
                   <td>GD626</td>
                   <td class="text-center">Engenharia Eletrônica</td>
+                  <td class="td-actions text-right">
+                      <button type="button" rel="tooltip" class="btn btn-info btn-link btn-icon btn-sm">
+                          <i class="tim-icons icon-book-bookmark"></i>
+                      </button>
+                    <button type="button" rel="tooltip" class="btn btn-info btn-link btn-icon btn-sm">
+                        <i class="tim-icons icon-single-02"></i>
+                    </button>
+                    <button type="button" rel="tooltip" class="btn btn-success btn-link btn-icon btn-sm">
+                        <i class="tim-icons icon-settings"></i>
+                    </button>
+                    <button type="button" rel="tooltip" class="btn btn-danger btn-link btn-icon btn-sm">
+                        <i class="tim-icons icon-simple-remove"></i>
+                    </button>
+                </td>
                 </tr>
                 <tr>
                   <td>05/08/2019</td>
@@ -65,6 +128,20 @@
                   <td>Robervald Sidrome</td>
                   <td>TR829</td>
                   <td class="text-center">Tecnologia da Informação</td>
+                  <td class="td-actions text-right">
+                      <button type="button" rel="tooltip" class="btn btn-info btn-link btn-icon btn-sm">
+                          <i class="tim-icons icon-book-bookmark"></i>
+                      </button>
+                    <button type="button" rel="tooltip" class="btn btn-info btn-link btn-icon btn-sm">
+                        <i class="tim-icons icon-single-02"></i>
+                    </button>
+                    <button type="button" rel="tooltip" class="btn btn-success btn-link btn-icon btn-sm">
+                        <i class="tim-icons icon-settings"></i>
+                    </button>
+                    <button type="button" rel="tooltip" class="btn btn-danger btn-link btn-icon btn-sm">
+                        <i class="tim-icons icon-simple-remove"></i>
+                    </button>
+                </td>
                 </tr>                               
               </tbody>
             </table>

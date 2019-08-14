@@ -9,44 +9,103 @@
         <div class=" card-header">
           <button class=" btn btn-fill btn-twitter" [routerLink]="['/fecharocorrenciarpl']"> Adicionar </button>
         </div>
+        <div class="row">
+          <div class="col-md-5">
+            <input class="form-control" placeholder="Busque por..." [(ngModel)]="list-responsavel.pesquisa" name="pesquisa"
+              type="text" />
+          </div>
+        
+          <!-- Button trigger modal -->
+          <button type="button" rel="tooltip" class="btn btn-info btn-link btn-icon btn-sm" data-toggle="modal"
+            data-target="#exampleModal">
+            <i class="tim-icons icon-book-bookmark"></i>
+          </button>
+        
+          <button type="button" rel="tooltip" class="btn btn-info btn-link btn-icon btn-sm">
+            <i class=" tim-icons icon-chart-bar-32"> </i>
+          </button>
+        
+        </div>
+
         <div class=" card-body">
           <div class=" table-responsive">
-            <table class=" table tablesorter" id="">
-              <thead class=" text-primary">
-                <tr>
-                  <th>LINHA</th>
-                  <th>ÁREA ACIONADA</th>
-                  <th>FECHADO POR</th>
-                  <th class="text-center">FIM DA PARADA</th>
-                </tr>
+            <table class="table">
+              <thead>
+                  <tr>
+                      <th class="text-center">#</th>
+                      <th>Name</th>
+                      <th>Job Position</th>
+                      <th>Since</th>
+                      <th class="text-right">Salary</th>
+                      <th class="text-right">Ações</th>
+                  </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td>DR872</td>
-                  <td>Engenharia de Processos</td>
-                  <td>Mario Yamasaki</td>
-                  <td class="text-center">11:10</td>
-                </tr>
-                <tr>
-                  <td>TRD 897</td>
-                  <td>Engenharia Mecânica</td>
-                  <td>Paulo Guedes</td>
-                  <td class="text-center">09:07</td>
-                </tr>
-                <tr>
-                  <td>HRG 456</td>
-                  <td>Engenharia Eletrônica</td>
-                  <td>Jair Bolsonaro</td>
-                  <td class="text-center">08:00</td>
-                </tr>
-                <tr>
-                  <td>Philip Chaney</td>
-                  <td>Tecnologia da Informação</td>
-                  <td>Robervald Sidrome</td>
-                  <td class="text-center">10:00</td>
-                </tr>                               
+                  <tr>
+                      <td class="text-center">1</td>
+                      <td>Andrew Mike</td>
+                      <td>Develop</td>
+                      <td>2013</td>
+                      <td class="text-right">&euro; 99,225</td>
+                      <td class="td-actions text-right">
+                          <button type="button" rel="tooltip" class="btn btn-info btn-link btn-icon btn-sm">
+                              <i class="tim-icons icon-book-bookmark"></i>
+                          </button>
+                        <button type="button" rel="tooltip" class="btn btn-info btn-link btn-icon btn-sm">
+                            <i class="tim-icons icon-single-02"></i>
+                        </button>
+                        <button type="button" rel="tooltip" class="btn btn-success btn-link btn-icon btn-sm">
+                            <i class="tim-icons icon-settings"></i>
+                        </button>
+                        <button type="button" rel="tooltip" class="btn btn-danger btn-link btn-icon btn-sm">
+                            <i class="tim-icons icon-simple-remove"></i>
+                        </button>
+                    </td>
+                  </tr>
+                  <tr>
+                      <td class="text-center">2</td>
+                      <td>John Doe</td>
+                      <td>Design</td>
+                      <td>2012</td>
+                      <td class="text-right">&euro; 89,241</td>
+                      <td class="td-actions text-right">
+                          <button type="button" rel="tooltip" class="btn btn-info btn-link btn-icon btn-sm">
+                              <i class="tim-icons icon-book-bookmark"></i>
+                          </button>
+                        <button type="button" rel="tooltip" class="btn btn-info btn-link btn-icon btn-sm">
+                            <i class="tim-icons icon-single-02"></i>
+                        </button>
+                        <button type="button" rel="tooltip" class="btn btn-success btn-link btn-icon btn-sm">
+                            <i class="tim-icons icon-settings"></i>
+                        </button>
+                        <button type="button" rel="tooltip" class="btn btn-danger btn-link btn-icon btn-sm">
+                            <i class="tim-icons icon-simple-remove"></i>
+                        </button>
+                    </td>
+                  </tr>
+                  <tr>
+                      <td class="text-center">3</td>
+                      <td>Alex Mike</td>
+                      <td>Design</td>
+                      <td>2010</td>
+                      <td class="text-right">&euro; 92,144</td>
+                      <td class="td-actions text-right">
+                          <button type="button" rel="tooltip" class="btn btn-info btn-link btn-icon btn-sm">
+                              <i class="tim-icons icon-book-bookmark"></i>
+                          </button>
+                        <button type="button" rel="tooltip" class="btn btn-info btn-link btn-icon btn-sm">
+                            <i class="tim-icons icon-single-02"></i>
+                        </button>
+                        <button type="button" rel="tooltip" class="btn btn-success btn-link btn-icon btn-sm">
+                            <i class="tim-icons icon-settings"></i>
+                        </button>
+                        <button type="button" rel="tooltip" class="btn btn-danger btn-link btn-icon btn-sm">
+                            <i class="tim-icons icon-simple-remove"></i>
+                        </button>
+                    </td>
+                  </tr>
               </tbody>
-            </table>
+          </table>
           </div>
         </div>
       </div>

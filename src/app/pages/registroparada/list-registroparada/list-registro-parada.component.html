@@ -1,4 +1,23 @@
-
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+          <i class="tim-icons icon-simple-remove"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div> 
 <div class=" content">
   <div class=" row">
     <div class=" col-md-12">
@@ -7,7 +26,23 @@
           <h4 class=" card-title">Listagem de Parada de Linha - RPL</h4>
         </div>
         <div class=" card-header">
-          <button class=" btn btn-fill btn-twitter" [routerLink]="['/registroparada']"> Adicionar </button>
+          <button class=" btn btn-success" [routerLink]="['/registroparada']"> Adicionar </button>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <input class="form-control" placeholder="Busque por..." name="pesquisar" type="text" />
+          </div>
+          
+          <!-- Button trigger modal -->
+          <button type="button" rel="tooltip" class="btn btn-info btn-link btn-icon btn-sm" 
+                 data-toggle="modal" data-target="#exampleModal">
+              <i class="tim-icons icon-book-bookmark"></i>
+          </button>
+
+          <button type="button" rel="tooltip" class="btn btn-info btn-link btn-icon btn-sm">
+              <i class=" tim-icons icon-chart-bar-32"> </i>
+          </button>
+          
         </div>
         <div class=" card-body">
           <div class=" table-responsive">
@@ -18,7 +53,7 @@
                   <th>LINHA</th>
                   <th>QUEM REGISTROU</th>
                   <th>Área acionada</th>
-                  <th class=" text-center"></th>
+                  <th class=" text-center">Ações</th>
                 </tr>
               </thead>
               <tbody>
@@ -27,24 +62,80 @@
                   <td>ALPHA 1</td>
                   <td>Mario Yamasaki</td>
                   <td>Engenharia de Processos</td>
+                  <td class="td-actions text-right">
+                      <button type="button" rel="tooltip" class="btn btn-info btn-link btn-icon btn-sm">
+                          <i class="tim-icons icon-book-bookmark"></i>
+                      </button>
+                    <button type="button" rel="tooltip" class="btn btn-info btn-link btn-icon btn-sm">
+                        <i class="tim-icons icon-single-02"></i>
+                    </button>
+                    <button type="button" rel="tooltip" class="btn btn-success btn-link btn-icon btn-sm">
+                        <i class="tim-icons icon-settings"></i>
+                    </button>
+                    <button type="button" rel="tooltip" class="btn btn-danger btn-link btn-icon btn-sm">
+                        <i class="tim-icons icon-simple-remove"></i>
+                    </button>
+                </td>
                 </tr>
                 <tr>
                   <td>TRD 897</td>
                   <td>Omega 2</td>
                   <td>Paulo Guedes</td>
                   <td>Engenharia Mecânica</td>
+                  <td class="td-actions text-right">
+                      <button type="button" rel="tooltip" class="btn btn-info btn-link btn-icon btn-sm">
+                          <i class="tim-icons icon-book-bookmark"></i>
+                      </button>
+                    <button type="button" rel="tooltip" class="btn btn-info btn-link btn-icon btn-sm">
+                        <i class="tim-icons icon-single-02"></i>
+                    </button>
+                    <button type="button" rel="tooltip" class="btn btn-success btn-link btn-icon btn-sm">
+                        <i class="tim-icons icon-settings"></i>
+                    </button>
+                    <button type="button" rel="tooltip" class="btn btn-danger btn-link btn-icon btn-sm">
+                        <i class="tim-icons icon-simple-remove"></i>
+                    </button>
+                </td>
                 </tr>
                 <tr>
                   <td>HRG 456</td>
                   <td>SSD 4</td>
                   <td>Jair Bolsonaro</td>
                   <td>Engenharia Eletrônica</td>
+                  <td class="td-actions text-right">
+                      <button type="button" rel="tooltip" class="btn btn-info btn-link btn-icon btn-sm">
+                          <i class="tim-icons icon-book-bookmark"></i>
+                      </button>
+                    <button type="button" rel="tooltip" class="btn btn-info btn-link btn-icon btn-sm">
+                        <i class="tim-icons icon-single-02"></i>
+                    </button>
+                    <button type="button" rel="tooltip" class="btn btn-success btn-link btn-icon btn-sm">
+                        <i class="tim-icons icon-settings"></i>
+                    </button>
+                    <button type="button" rel="tooltip" class="btn btn-danger btn-link btn-icon btn-sm">
+                        <i class="tim-icons icon-simple-remove"></i>
+                    </button>
+                </td>
                 </tr>
                 <tr>
                   <td>Philip Chaney</td>
                   <td>HD 8</td>
                   <td>Robervald Sidrome</td>
                   <td>Tecnologia da Informação</td>
+                  <td class="td-actions text-right">
+                      <button type="button" rel="tooltip" class="btn btn-info btn-link btn-icon btn-sm">
+                          <i class="tim-icons icon-book-bookmark"></i>
+                      </button>
+                    <button type="button" rel="tooltip" class="btn btn-info btn-link btn-icon btn-sm">
+                        <i class="tim-icons icon-single-02"></i>
+                    </button>
+                    <button type="button" rel="tooltip" class="btn btn-success btn-link btn-icon btn-sm">
+                        <i class="tim-icons icon-settings"></i>
+                    </button>
+                    <button type="button" rel="tooltip" class="btn btn-danger btn-link btn-icon btn-sm">
+                        <i class="tim-icons icon-simple-remove"></i>
+                    </button>
+                </td>
                 </tr>                               
               </tbody>
             </table>
